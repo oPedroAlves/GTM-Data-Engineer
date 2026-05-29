@@ -1,0 +1,56 @@
+{
+  "deals": [
+    {
+      "deal_id": "hs-deal-001",
+      "account_id": "hs-acct-001",
+      "company_name": "Acme Corp",
+      "deal_name": "Acme Corp — Enterprise License",
+      "notes": [
+        {
+          "id": "hs-note-101",
+          "createdAt": "2024-11-12T16:30:00Z",
+          "properties": {
+            "hs_timestamp": "2024-11-12T16:30:00Z",
+            "hubspot_owner_id": "owner-alex-001",
+            "hs_note_body": "<p>Post-discovery call notes — Acme Corp (11/12)</p><ul><li>CTO (Mike Johnson) added new hard requirement mid-call: AWS us-east-1 data residency. This came from a compliance audit. Non-negotiable.</li><li>Analytics lead (Sarah Chen) confirmed budget ~$80K annually, already approved. Has flexibility if ROI case is strong.</li><li>They're doubling the analytics team Q1 — this creates urgency. Current tool doesn't scale access control.</li><li>Champion is Sarah. Economic buyer is likely CFO (not on call yet). Need to get CFO intro before legal review.</li></ul><p>Risk: procurement cycle could be slow — Sarah mentioned 'legal review' before contract. Push for LOI before end of year.</p>"
+          }
+        },
+        {
+          "id": "hs-note-102",
+          "createdAt": "2024-11-19T15:45:00Z",
+          "properties": {
+            "hs_timestamp": "2024-11-19T15:45:00Z",
+            "hubspot_owner_id": "owner-alex-001",
+            "hs_note_body": "Post-technical deep-dive (11/19). Jordan confirmed all requirements met: RLS, PII masking, audit log, Splunk integration. Big positive: Sarah proactively asked about 2-year deal — this is a strong buying signal, suggests internal budget conversation has already happened. Action: get pricing out by EOD Friday. Watch out: Mike added SIEM requirement that wasn't on original list — pattern suggests more requirements may surface. Recommend getting a formal requirements sign-off doc before technical spec is shared."
+          }
+        }
+      ],
+      "meetings": [
+        {
+          "id": "hs-meeting-201",
+          "createdAt": "2024-11-12T14:50:00Z",
+          "properties": {
+            "hs_meeting_title": "Discovery Call — Acme Corp",
+            "hs_meeting_start_time": "2024-11-12T15:00:00Z",
+            "hs_meeting_end_time": "2024-11-12T16:00:00Z",
+            "hs_meeting_body": "Initial discovery call with Sarah Chen (Analytics Lead) and Mike Johnson (CTO). Agenda: current state pain points, technical requirements, and evaluation criteria.",
+            "hs_meeting_outcome": "Completed. Strong technical fit. Moved to technical validation. Follow-up: SE deep-dive scheduled for 11/19.",
+            "hs_attendee_owner_ids": ["owner-alex-001", "prospect-sarah-chen", "prospect-mike-johnson"]
+          }
+        },
+        {
+          "id": "hs-meeting-202",
+          "createdAt": "2024-11-19T13:45:00Z",
+          "properties": {
+            "hs_meeting_title": "Technical Deep-Dive — Security & Compliance",
+            "hs_meeting_start_time": "2024-11-19T14:00:00Z",
+            "hs_meeting_end_time": "2024-11-19T15:00:00Z",
+            "hs_meeting_body": "Technical deep-dive with Jordan Lee (Solutions Engineer). Topics: data residency architecture, row-level security implementation, PII masking, and audit log export to SIEM.",
+            "hs_meeting_outcome": "All technical requirements confirmed met. New requirement surfaced: SIEM audit log export (Splunk) — confirmed supported. Prospect asked about 2-year pricing structure. Next: commercial discussion.",
+            "hs_attendee_owner_ids": ["owner-alex-001", "se-jordan-001", "prospect-sarah-chen", "prospect-mike-johnson"]
+          }
+        }
+      ]
+    }
+  ]
+}

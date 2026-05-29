@@ -1,0 +1,73 @@
+{
+  "_comment": "Each channel is dedicated to one account/deal. channel_id maps to identity_map.channel_mappings.",
+  "channels": [
+    {
+      "channel_id": "C-deal-acme-corp",
+      "channel_name": "deal-acme-corp",
+      "messages": [
+        {
+          "type": "message",
+          "user": "U-alex-001",
+          "text": "Just got off the Acme Corp discovery call. CTO dropped a data residency bomb — us-east-1 only, non-negotiable from compliance. We can do it but I want to make sure we flag this in the deal notes. Sarah (analytics lead) is the champion, Mike (CTO) is the technical gatekeeper.",
+          "ts": "1731430200.000100",
+          "thread_ts": "1731430200.000100"
+        },
+        {
+          "type": "message",
+          "user": "U-manager-001",
+          "text": "Good call flagging this early. What's the budget look like?",
+          "ts": "1731431000.000200",
+          "thread_ts": "1731430200.000100"
+        },
+        {
+          "type": "message",
+          "user": "U-alex-001",
+          "text": "~$80K annually, already approved. Sarah mentioned flexibility if ROI is strong. I think we can push to $90K with the right packaging. They're doubling their analytics team in Q1 so there's urgency.",
+          "ts": "1731431500.000300",
+          "thread_ts": "1731430200.000100"
+        },
+        {
+          "type": "message",
+          "user": "U-manager-001",
+          "text": "That's a solid deal. Loop in Jordan for the SE deep-dive and let's get this into technical validation this week.",
+          "ts": "1731432000.000400",
+          "thread_ts": "1731430200.000100"
+        }
+      ]
+    },
+    {
+      "channel_id": "C-deal-acme-corp",
+      "channel_name": "deal-acme-corp",
+      "messages": [
+        {
+          "type": "message",
+          "user": "U-jordan-001",
+          "text": "Finished the Acme technical deep-dive. All requirements met — RLS, PII masking, audit logs, Splunk integration. One thing: Mike added a SIEM requirement that wasn't in the original list. I'm now wondering if there are more surprises coming. Alex, might be worth getting a formal requirements sign-off before we go further.",
+          "ts": "1732032000.000100",
+          "thread_ts": "1732032000.000100"
+        },
+        {
+          "type": "message",
+          "user": "U-alex-001",
+          "text": "Agreed. I'll put together a requirements doc and get Sarah to confirm before we send the technical spec. Big news though — Sarah asked about a 2-year deal unprompted. I think they've already had the internal budget conversation.",
+          "ts": "1732033000.000200",
+          "thread_ts": "1732032000.000100"
+        },
+        {
+          "type": "message",
+          "user": "U-manager-001",
+          "text": "That's a great sign. What's our 2-year pricing look like? Can we do 10% off for 2-year upfront?",
+          "ts": "1732034000.000300",
+          "thread_ts": "1732032000.000100"
+        },
+        {
+          "type": "message",
+          "user": "U-alex-001",
+          "text": "I'll run it by finance today. If they approved $80K annually, 2-year upfront at ~$144K ($72K/yr) seems achievable. Will get pricing out by Friday.",
+          "ts": "1732035000.000400",
+          "thread_ts": "1732032000.000100"
+        }
+      ]
+    }
+  ]
+}

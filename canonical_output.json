@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-05-29T13:35:10.096498Z",
+  "total_documents": 8,
+  "dead_letter_count": 0,
+  "sources": {
+    "gong": 2,
+    "hubspot_note": 2,
+    "hubspot_meeting": 2,
+    "slack": 2
+  },
+  "documents": [
+    {
+      "doc_id": "f7628671-89a2-5f73-b0a8-2ac4be9d415f",
+      "source": "gong",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-12T15:00:00Z",
+      "content_type": "transcript",
+      "content": "Summary: Discovery call with Acme Corp engineering and analytics leadership. Primary drivers are access control at scale and AWS us-east-1 data residency compliance. Budget of ~$80K is approved in principle with flexibility.\n\nKey points: 1. Hard requirement: data residency in AWS us-east-1 (compliance audit outcome). 2. Need row-level security and PII masking per role. 3. Scaling analytics team from 5 to 20 in Q1. 4. Budget ~$80K annually, approved in principle.\n\nNext steps: 1. Alex to send compliance documentation for us-east-1 deployment. 2. Schedule technical deep-dive with solutions engineer. 3. Sarah to share current access control policy doc.\n\nOutcome: Positive — strong technical fit confirmed. Both decision makers engaged. Moving to technical validation stage.",
+      "metadata": {
+        "call_id": "gong-call-001",
+        "call_url": "https://app.gong.io/call?id=gong-call-001",
+        "title": "Discovery Call — Acme Corp Technical Requirements",
+        "participants": [
+          "alex.rivera@ourcompany.com",
+          "s.chen@acmecorp.com",
+          "m.johnson@acmecorp.com"
+        ],
+        "next_steps": "1. Alex to send compliance documentation for us-east-1 deployment. 2. Schedule technical deep-dive with solutions engineer. 3. Sarah to share current access control policy doc.",
+        "outcome": "Positive — strong technical fit confirmed. Both decision makers engaged. Moving to technical validation stage.",
+        "sentiment_signal": "positive"
+      }
+    },
+    {
+      "doc_id": "cf2f407f-3405-5f17-a22a-6e7a97b984c7",
+      "source": "gong",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-19T14:00:00Z",
+      "content_type": "transcript",
+      "content": "Summary: Technical deep-dive confirming compliance fit. New requirement added: audit log export to SIEM (Splunk). Prospect proactively asked about 2-year upfront deal for better pricing.\n\nKey points: 1. New hard requirement: audit log exportable to SIEM — confirmed supported (Splunk integration available). 2. PII masking and RLS confirmed supported. 3. Prospect asked about 2-year upfront pricing — buying signal. 4. Us-east-1 architecture walkthrough completed.\n\nNext steps: 1. Jordan to send full technical spec with compliance documentation. 2. Alex to prepare 1-year vs 2-year pricing comparison. 3. Next call: commercial discussion with Sarah and procurement.\n\nOutcome: Positive — all technical requirements confirmed met. Strong buying signal: prospect proactively asked about multi-year deal structure.",
+      "metadata": {
+        "call_id": "gong-call-002",
+        "call_url": "https://app.gong.io/call?id=gong-call-002",
+        "title": "Technical Deep-Dive — Security & Compliance",
+        "participants": [
+          "jordan.lee@ourcompany.com",
+          "m.johnson@acmecorp.com",
+          "s.chen@acmecorp.com"
+        ],
+        "next_steps": "1. Jordan to send full technical spec with compliance documentation. 2. Alex to prepare 1-year vs 2-year pricing comparison. 3. Next call: commercial discussion with Sarah and procurement.",
+        "outcome": "Positive — all technical requirements confirmed met. Strong buying signal: prospect proactively asked about multi-year deal structure.",
+        "sentiment_signal": "positive"
+      }
+    },
+    {
+      "doc_id": "4e7f282f-18cf-5277-a5cf-c54eed9026b8",
+      "source": "hubspot_note",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-12T16:30:00Z",
+      "content_type": "note",
+      "content": "Post-discovery call notes — Acme Corp (11/12) CTO (Mike Johnson) added new hard requirement mid-call: AWS us-east-1 data residency. This came from a compliance audit. Non-negotiable. Analytics lead (Sarah Chen) confirmed budget ~$80K annually, already approved. Has flexibility if ROI case is strong. They're doubling the analytics team Q1 — this creates urgency. Current tool doesn't scale access control. Champion is Sarah. Economic buyer is likely CFO (not on call yet). Need to get CFO intro before legal review. Risk: procurement cycle could be slow — Sarah mentioned 'legal review' before contract. Push for LOI before end of year.",
+      "metadata": {
+        "note_id": "hs-note-101",
+        "owner_id": "owner-alex-001",
+        "sentiment_signal": null
+      }
+    },
+    {
+      "doc_id": "99ac7a2d-1925-5b35-800e-ee840891a972",
+      "source": "hubspot_note",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-19T15:45:00Z",
+      "content_type": "note",
+      "content": "Post-technical deep-dive (11/19). Jordan confirmed all requirements met: RLS, PII masking, audit log, Splunk integration. Big positive: Sarah proactively asked about 2-year deal — this is a strong buying signal, suggests internal budget conversation has already happened. Action: get pricing out by EOD Friday. Watch out: Mike added SIEM requirement that wasn't on original list — pattern suggests more requirements may surface. Recommend getting a formal requirements sign-off doc before technical spec is shared.",
+      "metadata": {
+        "note_id": "hs-note-102",
+        "owner_id": "owner-alex-001",
+        "sentiment_signal": null
+      }
+    },
+    {
+      "doc_id": "51accc32-8d9a-5bb8-bd7c-6921721249d3",
+      "source": "hubspot_meeting",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-12T15:00:00Z",
+      "content_type": "meeting",
+      "content": "Meeting: Discovery Call — Acme Corp\nInitial discovery call with Sarah Chen (Analytics Lead) and Mike Johnson (CTO). Agenda: current state pain points, technical requirements, and evaluation criteria.\nOutcome: Completed. Strong technical fit. Moved to technical validation. Follow-up: SE deep-dive scheduled for 11/19.",
+      "metadata": {
+        "meeting_id": "hs-meeting-201",
+        "title": "Discovery Call — Acme Corp",
+        "attendees": [
+          "owner-alex-001",
+          "prospect-sarah-chen",
+          "prospect-mike-johnson"
+        ],
+        "sentiment_signal": null
+      }
+    },
+    {
+      "doc_id": "3d02f062-2eb2-5444-808e-ee845ffb8d70",
+      "source": "hubspot_meeting",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-19T14:00:00Z",
+      "content_type": "meeting",
+      "content": "Meeting: Technical Deep-Dive — Security & Compliance\nTechnical deep-dive with Jordan Lee (Solutions Engineer). Topics: data residency architecture, row-level security implementation, PII masking, and audit log export to SIEM.\nOutcome: All technical requirements confirmed met. New requirement surfaced: SIEM audit log export (Splunk) — confirmed supported. Prospect asked about 2-year pricing structure. Next: commercial discussion.",
+      "metadata": {
+        "meeting_id": "hs-meeting-202",
+        "title": "Technical Deep-Dive — Security & Compliance",
+        "attendees": [
+          "owner-alex-001",
+          "se-jordan-001",
+          "prospect-sarah-chen",
+          "prospect-mike-johnson"
+        ],
+        "sentiment_signal": null
+      }
+    },
+    {
+      "doc_id": "ef037ee8-fca8-5194-a5fe-57fc3074110d",
+      "source": "slack",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-12T13:50:00.000100Z",
+      "content_type": "message",
+      "content": "Just got off the Acme Corp discovery call. CTO dropped a data residency bomb — us-east-1 only, non-negotiable from compliance. We can do it but I want to make sure we flag this in the deal notes. Sarah (analytics lead) is the champion, Mike (CTO) is the technical gatekeeper.\nGood call flagging this early. What's the budget look like?\n~$80K annually, already approved. Sarah mentioned flexibility if ROI is strong. I think we can push to $90K with the right packaging. They're doubling their analytics team in Q1 so there's urgency.\nThat's a solid deal. Loop in Jordan for the SE deep-dive and let's get this into technical validation this week.",
+      "metadata": {
+        "channel_id": "C-deal-acme-corp",
+        "thread_ts": "1731430200.000100",
+        "participants": [
+          "U-alex-001",
+          "U-manager-001"
+        ],
+        "message_count": 4,
+        "sentiment_signal": null
+      }
+    },
+    {
+      "doc_id": "b3256f78-03a0-5fe1-baab-a0d561c6c6c5",
+      "source": "slack",
+      "account_id": "hs-acct-001",
+      "deal_id": "hs-deal-001",
+      "company_name": "Acme Corp",
+      "timestamp": "2024-11-19T13:00:00.000100Z",
+      "content_type": "message",
+      "content": "Finished the Acme technical deep-dive. All requirements met — RLS, PII masking, audit logs, Splunk integration. One thing: Mike added a SIEM requirement that wasn't in the original list. I'm now wondering if there are more surprises coming. Alex, might be worth getting a formal requirements sign-off before we go further.\nAgreed. I'll put together a requirements doc and get Sarah to confirm before we send the technical spec. Big news though — Sarah asked about a 2-year deal unprompted. I think they've already had the internal budget conversation.\nThat's a great sign. What's our 2-year pricing look like? Can we do 10% off for 2-year upfront?\nI'll run it by finance today. If they approved $80K annually, 2-year upfront at ~$144K ($72K/yr) seems achievable. Will get pricing out by Friday.",
+      "metadata": {
+        "channel_id": "C-deal-acme-corp",
+        "thread_ts": "1732032000.000100",
+        "participants": [
+          "U-alex-001",
+          "U-jordan-001",
+          "U-manager-001"
+        ],
+        "message_count": 4,
+        "sentiment_signal": null
+      }
+    }
+  ]
+}

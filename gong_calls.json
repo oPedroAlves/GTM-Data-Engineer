@@ -1,0 +1,123 @@
+{
+  "calls": [
+    {
+      "call_id": "gong-call-001",
+      "conversation_id": "conv-8821",
+      "call_url": "https://app.gong.io/call?id=gong-call-001",
+      "company_id": "hs-acct-001",
+      "company_name": "Acme Corp",
+      "deal_id": "hs-deal-001",
+      "deal_name": "Acme Corp — Enterprise License",
+      "call_datetime": "2024-11-12T15:00:00Z",
+      "title": "Discovery Call — Acme Corp Technical Requirements",
+      "has_recording": 1,
+      "has_transcript": 1,
+      "transcript_json": [
+        {
+          "speakerId": "rep-001",
+          "speakerName": "Alex Rivera",
+          "speakerEmail": "alex.rivera@ourcompany.com",
+          "role": "seller",
+          "startTime": 5.2,
+          "endTime": 38.4,
+          "text": "Thanks for joining, Sarah and Mike. Today I'd love to understand your current data infrastructure and what's driving the evaluation. Can you walk me through where the pain points are?"
+        },
+        {
+          "speakerId": "prospect-001",
+          "speakerName": "Sarah Chen",
+          "speakerEmail": "s.chen@acmecorp.com",
+          "role": "prospect",
+          "startTime": 40.1,
+          "endTime": 112.8,
+          "text": "Sure. The main driver is that we're scaling our analytics team from 5 to 20 people next quarter and our current solution just doesn't support the access control model we need. Every analyst ends up with more access than they should have."
+        },
+        {
+          "speakerId": "prospect-002",
+          "speakerName": "Mike Johnson",
+          "speakerEmail": "m.johnson@acmecorp.com",
+          "role": "prospect",
+          "startTime": 115.0,
+          "endTime": 198.3,
+          "text": "From my side, the hard requirement is data residency. Everything needs to stay within AWS us-east-1. We had a compliance audit last quarter and this became non-negotiable. If a vendor can't confirm that, we can't move forward."
+        },
+        {
+          "speakerId": "rep-001",
+          "speakerName": "Alex Rivera",
+          "speakerEmail": "alex.rivera@ourcompany.com",
+          "role": "seller",
+          "startTime": 200.0,
+          "endTime": 245.7,
+          "text": "That's fully supported — we have a dedicated us-east-1 deployment option and I can loop in our solutions engineer to walk through the compliance documentation. On the access control side, can you tell me more about the model you need?"
+        },
+        {
+          "speakerId": "prospect-001",
+          "speakerName": "Sarah Chen",
+          "speakerEmail": "s.chen@acmecorp.com",
+          "role": "prospect",
+          "startTime": 247.0,
+          "endTime": 310.5,
+          "text": "We need row-level security per team, and the ability to mask PII fields for certain roles. Budget is approved in principle — we're looking at roughly $80k annually but have flexibility if the ROI case is strong."
+        }
+      ],
+      "spotlight_brief": "Discovery call with Acme Corp engineering and analytics leadership. Primary drivers are access control at scale and AWS us-east-1 data residency compliance. Budget of ~$80K is approved in principle with flexibility.",
+      "spotlight_key_points": "1. Hard requirement: data residency in AWS us-east-1 (compliance audit outcome). 2. Need row-level security and PII masking per role. 3. Scaling analytics team from 5 to 20 in Q1. 4. Budget ~$80K annually, approved in principle.",
+      "spotlight_next_steps": "1. Alex to send compliance documentation for us-east-1 deployment. 2. Schedule technical deep-dive with solutions engineer. 3. Sarah to share current access control policy doc.",
+      "spotlight_outcome": "Positive — strong technical fit confirmed. Both decision makers engaged. Moving to technical validation stage."
+    },
+    {
+      "call_id": "gong-call-002",
+      "conversation_id": "conv-8934",
+      "call_url": "https://app.gong.io/call?id=gong-call-002",
+      "company_id": "hs-acct-001",
+      "company_name": "Acme Corp",
+      "deal_id": "hs-deal-001",
+      "deal_name": "Acme Corp — Enterprise License",
+      "call_datetime": "2024-11-19T14:00:00Z",
+      "title": "Technical Deep-Dive — Security & Compliance",
+      "has_recording": 1,
+      "has_transcript": 1,
+      "transcript_json": [
+        {
+          "speakerId": "se-001",
+          "speakerName": "Jordan Lee",
+          "speakerEmail": "jordan.lee@ourcompany.com",
+          "role": "seller",
+          "startTime": 3.0,
+          "endTime": 55.0,
+          "text": "I've reviewed the requirements Alex shared. The us-east-1 residency is straightforward — I'll walk you through our architecture. The PII masking requirement is interesting because we have two ways to implement it."
+        },
+        {
+          "speakerId": "prospect-002",
+          "speakerName": "Mike Johnson",
+          "speakerEmail": "m.johnson@acmecorp.com",
+          "role": "prospect",
+          "startTime": 57.0,
+          "endTime": 140.0,
+          "text": "Before we get into that — we had an internal discussion and there's a new requirement. Our legal team wants an audit log of every data access event, exportable to our SIEM. This wasn't on the original list but it's now a hard requirement too."
+        },
+        {
+          "speakerId": "se-001",
+          "speakerName": "Jordan Lee",
+          "speakerEmail": "jordan.lee@ourcompany.com",
+          "role": "seller",
+          "startTime": 142.0,
+          "endTime": 195.0,
+          "text": "We have audit logging built in — exportable via API and we support direct Splunk and Datadog integration for SIEM. I'll include that in the technical spec I send over."
+        },
+        {
+          "speakerId": "prospect-001",
+          "speakerName": "Sarah Chen",
+          "speakerEmail": "s.chen@acmecorp.com",
+          "role": "prospect",
+          "startTime": 197.0,
+          "endTime": 260.0,
+          "text": "That's actually really good news. We're on Splunk. One thing that came up — our procurement team is asking whether we can do a 2-year deal upfront for a better rate. Is that something you can structure?"
+        }
+      ],
+      "spotlight_brief": "Technical deep-dive confirming compliance fit. New requirement added: audit log export to SIEM (Splunk). Prospect proactively asked about 2-year upfront deal for better pricing.",
+      "spotlight_key_points": "1. New hard requirement: audit log exportable to SIEM — confirmed supported (Splunk integration available). 2. PII masking and RLS confirmed supported. 3. Prospect asked about 2-year upfront pricing — buying signal. 4. Us-east-1 architecture walkthrough completed.",
+      "spotlight_next_steps": "1. Jordan to send full technical spec with compliance documentation. 2. Alex to prepare 1-year vs 2-year pricing comparison. 3. Next call: commercial discussion with Sarah and procurement.",
+      "spotlight_outcome": "Positive — all technical requirements confirmed met. Strong buying signal: prospect proactively asked about multi-year deal structure."
+    }
+  ]
+}

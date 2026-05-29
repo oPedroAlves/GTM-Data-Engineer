@@ -1,0 +1,17 @@
+{
+  "_comment": "Channel-based identity map. Each Slack channel is dedicated to one HubSpot account/deal. Populated by sales ops when a channel is created for a new deal. This fixes the multi-account B2B problem: a seller works on dozens of accounts simultaneously, so mapping by user_id is ambiguous — mapping by channel_id is deterministic.",
+  "_strategies": {
+    "dedicated_channel": "One Slack channel per account (#deal-acme-corp). Channel ID maps directly to account_id. Requires sales ops discipline.",
+    "slack_connect": "External users (prospects) are invited to a shared channel. Their corporate email resolves to a single HubSpot Contact → Account. Most robust for enterprise deals.",
+    "ner_fallback": "For shared internal channels: extract company name mentions via NER/LLM and fuzzy-match against HubSpot company list. Higher cost, higher recall."
+  },
+  "channel_mappings": [
+    {
+      "channel_id": "C-deal-acme-corp",
+      "account_id": "hs-acct-001",
+      "company_name": "Acme Corp",
+      "deal_id": "hs-deal-001",
+      "mapping_type": "dedicated_channel"
+    }
+  ]
+}
